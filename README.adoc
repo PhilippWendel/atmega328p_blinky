@@ -1,0 +1,24 @@
+= Readme
+
+Tested with zig version: 0.12.0-dev.286+b0d9bb0bb.
+
+== Build
+
+[source, bash]
+----
+zig build -Doptimize=ReleaseSmall
+----
+
+== Upload
+
+[source, bash]
+----
+avrdude -c arduino -p m328p -P /dev/ttyACM0 -U flash:w:zig-out/bin/my-executable:e
+----
+
+== Clean
+
+[source, bash]
+----
+rm -rf ~/.cache/zig zig-cache/ zig-out/
+----

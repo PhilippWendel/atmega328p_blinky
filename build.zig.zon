@@ -1,0 +1,10 @@
+.{
+    .name = "demo",
+    .version = "0.12.0",
+    .dependencies = .{
+        .atmega = .{
+            .url = "https://github.com/PhilippWendel/microchip-atmega/archive/master.tar.gz",
+            .hash = "1220a0e05ace3dab61c02fceff74976216916a2ffb5ea5732a6a046656a942f815e1",
+        },
+    },
+}
